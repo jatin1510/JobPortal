@@ -20,7 +20,7 @@ $("#update_user").submit(function (event)
     console.log(data);
 
     var request = {
-        "url": `http://localhost:3000/api/studentupdate/${data.id}`,
+        "url": `/api/studentupdate/${data.id}`,
         "method": "PUT",
         "data": data,
     }
@@ -47,7 +47,7 @@ $("#edit_company").submit(function (event)
     console.log(data);
 
     var request = {
-        "url": `http://localhost:3000/api/companyupdate/${data.id}`,
+        "url": `/api/companyupdate/${data.id}`,
         "method": "PUT",
         "data": data,
     }
