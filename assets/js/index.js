@@ -31,7 +31,7 @@ $("#update_user").submit(function (event)
     })
 
     // User won't be able to go back via back button
-    location.replace(`https://job-portal-gu1q.onrender.com/api/showstudent?email=${data.email}/`);
+    location.replace(`/api/showstudent?email=${data.email}/`);
     // location.replace(`http://localhost:3000/api/showstudent?email=${data.email}/`);
 })
 
@@ -58,6 +58,6 @@ $("#edit_company").submit(function (event)
     })
 
     // User won't be able to go back via back button
-    location.replace(`https://job-portal-gu1q.onrender.com/api/showcompany?email=${data.email}/`);
+    location.replace(`/api/showcompany?email=${data.email}/`);
     // location.replace(`http://localhost:3000/api/showcompany?email=${data.email}`);
 })
